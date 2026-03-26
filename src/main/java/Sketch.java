@@ -67,7 +67,7 @@ public class Sketch {
     if(store[guess].getCatNum() == catNumToFind)
         return store[guess].getInventory();
     else if(store[guess].getCatNum() > catNumToFind)
-        return recursiveBinarySearch (catNumToFind,nLow,guess-1);
+        return recursiveBinarySearch(catNumToFind,nLow,guess-1);
     else
         return recursiveBinarySearch(catNumToFind,guess + 1,nHigh);    
   }
